@@ -17,9 +17,5 @@ TSoftObjectPtr<UMaterialInterface> UAthenaSprayItemDefinition::GetDecalMaterial(
 UAthenaSprayItemDefinition::UAthenaSprayItemDefinition() {
     this->bUseBannerAsTexture = false;
     ItemType = EFortItemType::AthenaDance;
-    GameplayTags.RemoveTag(FGameplayTag::RequestGameplayTag(FName("Cosmetics.EmoteType.Dance")));
-    UGameplayTagsManager& Manager = UGameplayTagsManager::Get();
-    Manager.AddNativeGameplayTag(TEXT("Cosmetics.EmoteType.Spray"));
-    GameplayTags.AddTag(FGameplayTag::RequestGameplayTag(FName("Cosmetics.EmoteType.Spray")));
 }
 
