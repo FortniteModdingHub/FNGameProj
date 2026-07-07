@@ -11,11 +11,11 @@ class FORTNITEGAME_API UAthenaItemWrapDefinition : public UAthenaCosmeticItemDef
     GENERATED_BODY()
 public:
 protected:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true, AssetBundles="Equipped"))
     TSoftClassPtr<ACustomItemWrapModifier> ItemWrapModifierBlueprint;
     
 private:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true, AssetBundles="Equipped"))
     TSoftObjectPtr<UMaterialInterface> ItemWrapMaterial;
     
 public:
