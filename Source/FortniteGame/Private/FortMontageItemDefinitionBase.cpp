@@ -61,13 +61,13 @@ bool UFortMontageItemDefinitionBase::CanAccessMontageItem(const AFortPlayerContr
 
 UFortMontageItemDefinitionBase::UFortMontageItemDefinitionBase(const FObjectInitializer& ObjectInitializer) 
     : Super(ObjectInitializer) {
-    PreviewLoops = 0;
-    PreviewLength = 1;
-    EmoteCooldownSecs = 1;
+    PreviewLoops = 1;
+    PreviewLength = 0;
+    EmoteCooldownSecs = 3;
     bMontageContainsFacialAnimation = false;
     bPlayRandomSection = false;
     bSwitchToHarvestingToolOnUse = false;
-    bHolsterWeapon = false;
+    bHolsterWeapon = true;
     bHolsterWeaponIfDualWieldPickaxe = false;
 }
 
